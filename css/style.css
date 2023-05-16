@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --OrangeColor:#d57c11;
+    --section-color: #d0d7da;
+    --SectionPadding:100px;
+}
+body{
+    min-height: 1000px;
+}
+.navbar{
+    overflow: auto;
+    background-color:#404549;
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: var(--OrangeColor) !important;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+nav ul li a{
+    color: white !important;
+    font-weight: bold;
+}
+.logo{
+    color:white;
+    letter-spacing:0.5px;
+}
+
+.text{
+    color:var(--OrangeColor);
+    position: absolute;
+    top: 45px;
+    left: calc(199 - 15px);
+    letter-spacing: 4px;
+    font-size: 16px;
+
+}
+.icon>i{
+  font-size: 51px;
+  color: #fff;
+}
+
+a.active,
+.nav-link:hover{
+    color: var(--OrangeColor) !important;
+}
+
+.search>i{
+    color:var(--OrangeColor);
+    font-size: 19px;
+}
+.search{
+    border-left: 1px solid var(--OrangeColor);
+}
+.landing{
+        background-image: url("../imgs/one-page.jpg");
+        width: 100vw;
+        height: 100vh; 
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+}
+.landing>h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+button.first{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    border: none;
+    background-color: #d57827;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in;
+}
+button.first:hover{
+    background-color: #d1680c;
+    letter-spacing: 4px;
+}
+button i.down{
+    position: absolute;
+    right: 70px;
+    bottom: 110px;
+    font-size: 30px;
+    color: #d57827;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 11px;
+    position: fixed;
+    z-index: 99;
+}
+
+.vision{
+    padding-top:var(--SectionPadding);
+    padding-bottom: var(--SectionPadding);
+     
+}
+
+.vision ul{
+    max-width: 550px;
+}
+ul.text-box li{
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+@media (max-width:882px) {
+    .vision{
+    flex-direction: column-reverse; 
+    }     
+}
+.orange{
+    color: var(--OrangeColor) ;
+}
+
+ .main-title::before{
+     position: absolute;
+     content: "";
+     border-bottom: 2px solid var(--OrangeColor);
+     width: 120px;
+     left: 50%;
+     bottom: 45px;
+     transform: translateX(-50%);
+ }
+ .main-title::after{
+     content: "";
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+    border: 2px solid var(--OrangeColor);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    bottom: 38px;
+    background-color: white;
+ }
+  .card{
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 215px;
+ }
+
+ .card:hover img{
+    transform: rotate(2deg) scale(1.1);
+    }
+  button.btn:hover{
+        letter-spacing: 4px;
+        outline: none;
+    }
+.main-title h2{
+        font-size: 40px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+.about{
+    padding-top: var(--SectionPadding);
+    padding-bottom:calc(var(--SectionPadding)+250px);
+    /* background-color: rgba(226, 223, 223, 0.5); */
+    /* overflow: hidden; */
+    /* background-image: linear-gradient(to right,#9e7048,white ); */
+
+}
+.about video{
+    width: 100%    !important;
+    height: auto  !important;
+}
+.footer{
+    background-color:#272b2e;
+    color: white;
+    /* padding-top:var(--SectionPadding);
+    padding-bottom:var(--SectionPadding); */
+}
+.footer a:hover{
+    text-decoration:underline !important;
+}
+.footer .icons .face{
+    background-color: #1877f2; 
+}
+.footer .linked{
+    background-color:#0a66c2;
+}
+.footer .whats{
+    background-color:#25d366;
+}
+.footer .insta{
+    background-color: #C13584;
+}
+.footer .snapchat{
+    background-color: #FFFC00;
+}
+
+.footer .u-tube{
+    background-color: #ff0000;
+}
